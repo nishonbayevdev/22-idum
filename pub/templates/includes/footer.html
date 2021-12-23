@@ -1,0 +1,63 @@
+{% load static%}
+<footer class="footer has-cards" data-aos-duration='45000' data-aos="fade-up">
+    <div class="container container-lg">
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="card card-lift--hover shadow border-0" data-aos-duration='25000' data-aos="fade-up">
+              <img src="{% static 'assets/img/undraw_book_lover_mkck.svg' %}" class="card-img">
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-0">
+          <div class="card card-lift--hover shadow border-0" data-aos-duration='25000' data-aos="fade-up">
+              <img src="{% static 'assets/img/undraw_team_spirit_re_yl1v.svg'%}" class="card-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" data-aos-duration='25000' data-aos="fade-up">
+      <div class="row row-grid align-items-center my-md">
+        <div class="col-lg-6">
+          <h3 class="text-primary font-weight-light mb-2">Lorem ipsum dolor sit amet.</h3>
+          <h4 class="mb-0 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio?</h4>
+        </div>
+        <div class="col-lg-6 text-lg-center btn-wrapper">
+          <button target="_blank" href="" rel="nofollow" class="btn btn-icon-only btn-twitter rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
+            <span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+          </button>
+          <button target="_blank" href="" rel="nofollow" class="btn-icon-only rounded-circle btn btn-facebook" data-toggle="tooltip" data-original-title="Like us">
+            <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
+          </button>
+          <button target="_blank" href="" rel="nofollow" class="btn btn-icon-only btn-dribbble rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
+            <span class="btn-inner--icon"><i class="fa fa-dribbble"></i></span>
+          </button>
+          <button target="_blank" href="" rel="nofollow" class="btn btn-icon-only btn-github rounded-circle" data-toggle="tooltip" data-original-title="Star on Github">
+            <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2021 <a href="" target="_blank">22-IDUM</a>.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a href="{% url 'home' %}" class="nav-link" target="_blank">Bosh sahifa</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" class="nav-link" target="_blank">Biz haqimizda</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'news' %}" class="nav-link" target="_blank">Yangiliklar</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'contact'%}" class="nav-link" target="_blank">Aloqa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

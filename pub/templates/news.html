@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+ {% block content %}
+  <section class="section section-shaped section-lg">
+    <div class="shape shape-style-1 shape-primary">
+        <span class="span-150" data-aos-duration='25000' data-aos="fade-up"></span>
+        <span class="span-50" data-aos-duration='25000' data-aos="fade-left"></span>
+        <span class="span-50" data-aos-duration='25000' data-aos="fade-down"></span>
+        <span class="span-75" data-aos-duration='25000' data-aos="fade-right"></span>
+        <span class="span-100" data-aos-duration='25000' data-aos="fade-down"></span>
+        <span class="span-75" data-aos-duration='25000' data-aos="fade-left"></span>
+        <span class="span-50" data-aos-duration='25000' data-aos="fade-left"></span>
+        <span class="span-100" data-aos-duration='25000' data-aos="fade-right"></span>
+        <span class="span-50" data-aos-duration='25000' data-aos="fade-up"></span>
+        <span class="span-100" data-aos-duration='25000' data-aos="fade-down"></span>
+      </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-10 offset-1">
+                <form role="form" action="{% url 'search' %}" method="post">
+                  {% csrf_token %}
+                    <div class="form-group">
+                        <div class="form-group mb-3">
+                            <div class="input-group input-group-alternative" data-aos-duration='25000' data-aos="fade-up">
+                                
+                              <input class="form-control" placeholder="Search" type="search" name="search">
+                              <div class="input-group-prepend">
+                                  <button type="submit" class="btn btn-secondary" style="border-top-right-radius:5px ;border-bottom-right-radius: 5px;">Search</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </form>
+              </div>
+          </div>
+          
+          <h3 class="text-primary font-weight-light mb-5 mt-5 text-center" data-aos-duration='25000' data-aos="fade-down">Thank you for supporting us!</h3>
+      </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    
+  </section>
+  <section class="app-icon-about">
+    <div class="container mt-5 mb-5">
+      {%if message.flag%}
+      <h3 class="text-primary font-weight-light mb-5 mt-5 text-center" data-aos-duration='25000' data-aos="fade-down">{{message.data}}</h3>
+      {%endif%}
+      <div class="row">
+        {% for new in news%}
+        <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 mb-2 mt-2" data-aos-duration='25000' data-aos="fade-up">
+          <div class="blur--hover">
+            <div class="icons-container blur-item on-screen" data-toggle="on-screen">
+              <img src="/media/{{new.imgs}}" alt="Raised image" class="img-fluid rounded shadow-lg" style="height: 250px; width: 100%;">
+            </div>
+            <a href="/post/{{new.id}}" class="blur-hidden text-success h5">{{new.title}}</a>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+    </div>
+  </section>
+  <script>
+  function scrollToDownload() {
+
+    if ($('.section-download').length != 0) {
+      $("html, body").animate({
+        scrollTop: $('.section-download').offset().top
+      }, 1000);
+    }
+  }
+</script>
+{% endblock %}

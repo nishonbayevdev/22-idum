@@ -1,0 +1,67 @@
+    {% extends 'base.html' %}
+    {% block content %}
+    <div class="wrapper">
+        <div class="section section-hero section-shaped">
+            <div class="shape shape-style-3 shape-default">
+              <span class="span-150" data-aos-duration='25000' data-aos="fade-up"></span>
+              <span class="span-50" data-aos-duration='25000' data-aos="fade-down"></span>
+              <span class="span-50" data-aos-duration='25000' data-aos="fade-up"></span>
+              <span class="span-75" data-aos-duration='25000' data-aos="fade-left"></span>
+              <span class="span-100" data-aos-duration='25000' data-aos="fade-right"></span>
+              <span class="span-75" data-aos-duration='25000' data-aos="fade-down"></span>
+              <span class="span-50" data-aos-duration='25000' data-aos="fade-left"></span>
+              <span class="span-100" data-aos-duration='25000' data-aos="fade-up"></span>
+              <span class="span-50" data-aos-duration='25000' data-aos="fade-right"></span>
+              <span class="span-100" data-aos-duration='25000' data-aos="fade-up"></span>
+            </div>
+            <div class="page-header">
+              <div class="container shape-container d-flex align-items-center py-lg">
+                <div class="col px-0">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 text-center">
+                      <h1 class="text-white display-1" data-aos-duration='25000' data-aos="fade-up">People stories</h1>
+                      <h2 class="display-4 font-weight-normal text-white" data-aos-duration='25000' data-aos="fade-up">The time is right now!</h2>
+                      <div class="btn-wrapper mt-4" data-aos-duration='25000' data-aos="fade-up">
+                        <a href={% url 'news' %} class="btn btn-warning btn-icon mt-3 mb-sm-0">
+                          <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+                          <span class="btn-inner--text" >Yangiliklar</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="separator separator-bottom separator-skew zindex-100">
+              <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+              </svg>
+            </div>
+          </div>      
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <h1 class="h1 text-primary">{{data.title}}</h1>
+            <div class="row">
+              <div class="col-10 offset-1">
+                <p class="text-success">{{data.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+    function scrollToDownload() {
+
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+</script>
+{% endblock %}

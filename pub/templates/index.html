@@ -1,0 +1,312 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+    <div class="wrapper">
+    <div class="section section-hero section-shaped">
+        <div class="shape shape-style-1 shape-primary">
+          <span class="span-150"></span>
+          <span class="span-50"></span>
+          <span class="span-50"></span>
+          <span class="span-75"></span>
+          <span class="span-100"></span>
+          <span class="span-75"></span>
+          <span class="span-50"></span>
+          <span class="span-100"></span>
+          <span class="span-50"></span>
+          <span class="span-100"></span>
+        </div>
+        <div class="page-header">
+          <div class="container shape-container d-flex align-items-center py-lg">
+            <div class="row">
+              <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 px-0" data-aos-duration='1000' data-aos="fade-right">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-12  text-center">
+                    <img src="{% static 'assets/img/brand/' %}" style="width: 200px;" class="img-fluid">
+                    <p class="lead text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga unde ut..</p>
+                    <div class="btn-wrapper mt-5" data-aos-duration='1000' data-aos="fade-right">
+                      <a href="" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+                        <span class="btn-inner--text">Boglanish</span>
+                      </a>
+                      <a href="" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
+                        <span class="btn-inner--text"><span class="text-warning">Bzi haqimizda</span></span>
+                      </a>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 px-0">
+                <img src="{% static 'assets/img/undraw_book_lover_mkck.svg'%}" data-aos-duration='1000' data-aos="fade-left" alt="" class="img-fluid">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="separator separator-bottom separator-skew zindex-100">
+          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <div class="mb-3">
+            <small class="text-uppercase font-weight-bold">Xabarlar</small>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12" data-aos-duration='1000' data-aos="fade-right" >
+              <div class="nav-wrapper">
+                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>video</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>malumot</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>To'liq malumot</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card shadow" >
+                <div class="card-body">
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                      <video src="/media/{{video_1.video}}" controls class="img-fluid" style="height: 300px;"></video>  
+                    </div>
+                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                      <p class="description">{{video_1.shortDescription}}</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                      <p class="description">{{video_1.descriptio}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12" data-aos-duration='1000' data-aos="fade-left">
+              <div class="nav-wrapper ">
+                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-1-tab" data-toggle="tab" href="#tabs-icons-text-1-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>video</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-1-2-tab" data-toggle="tab" href="#tabs-icons-text-1-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>malumot</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-1-3-tab" data-toggle="tab" href="#tabs-icons-text-1-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>To'liq malumot</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card shadow mt-3">
+                <div class="card-body">
+                  <div class="tab-content" id="myTabContent1">
+                    <div class="tab-pane fade show active" id="tabs-icons-text-1-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                      <video src="/media/{{video_2.video}}" controls class="img-fluid" style="height: 300px;"></video>  
+                    </div>
+                    <div class="tab-pane fade" id="tabs-icons-text-1-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                      <p class="description">{{video_2.shortDescription}}</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-icons-text-1-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                      <p class="description">{{video_2.descriptio}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper mt-5 mb-5">
+      <div class="container-fluid" data-aos-duration='30000' data-aos="fade-up">
+        <h3 class="h3 text-success font-weight-bold" style="text-align: center;" data-aos-duration='15000' data-aos="fade-down">Fanlar</h3>
+        <div class="row science-pils">
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='25000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/creativity.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='25000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/education.png'%}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/libra.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/online-education.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/physics.png'%}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/data-analysis.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/5389838.png'%}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/4861830.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/5389838.png'%}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/biology.png'%}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/books.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-6 mt-2 mb-2 img-hover" data-aos-duration='15000' data-aos="fade-up">
+            <img src="{% static 'assets/img/sciences/chemistry.png' %}" alt="Raised image" class="img-fluid rounded shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper mt-5 mb-5">
+     <div class="container-fluid mt-5 mb-5">
+      <h3 class="h3 text-muted font-weight-bold" style="text-align: center;" data-aos-duration='10000' data-aos="fade-up">O'qituvchilar</h3>
+      <div class="row">
+        <div class="col-12" data-aos-duration='40000' data-aos="fade-down">
+          <div class="owl-carousel owl-theme" style="cursor: pointer;" >
+            {% for employ in Employes%}
+            <div class="item mt-5 mb-5 app-count" >
+              <div class="card shadow rounded" style="height: 500px;">
+                  <img src="/media/{{employ.img}}" alt="{{employ.img}}" class="img-fluid" style="height: 300px;">
+                <div class="card-body">
+                  <h3 class="text-success">{{employ.fullName}}</h3>
+                  <h3 class="text-primary">{{employ.proffession}}</h3>
+                  <p class="text-light"></p>
+                  <div class="row justify-content-center">
+                    <div class="col-2">
+                      <a href="{{employ.telegram}}" class="fa fa-facebook" target="_blank"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="{{employ.instagram}}" class="fa fa-instagram" target="_blank"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="{{employ.facebook}}" class="fa fa-google-plus" target="_blank"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {%endfor%}
+
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class='wrapper'>
+      <div class="container mt-5 mb-5">
+        <h3 class="h3 text-muted font-weight-bold mb-5" style="text-align: center;" data-aos-duration='10000' data-aos="fade-down">Hisoblar</h3>
+           <div class="row mb-5 mt-5">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-1 mt-3 mb-3" data-aos-duration='25000' data-aos="fade-right">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 shadow rounded app-count ">
+                     <div>
+                       <img src="{% static 'assets/img/sciences/undraw_exams_g-4-ow.svg'%}" alt="" class="img-fluid mb-2 mt-2">
+                       <div>
+                         <p class="text-muted mb-3 mt-3 text-center">Oquvchilar soni</p>
+                         <h1 class="count text-center">{{counts.students}}</h1>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-1 mt-3 mb-3" data-aos-duration='25000' data-aos="fade-down">
+                 <div class="container">
+                   <div class="row">
+                     <div class="col-12 shadow rounded app-count ">
+                      <div>
+                        <img src="{% static 'assets/img/sciences/undraw_teacher_-35-j2.svg'%}" alt="" class="img-fluid mb-2 mt-2">
+                        <div>
+                          <p class="text-muted mb-3 mt-3 text-center">O'qituvchilar soni</p>
+                          <h1 class="count text-center">{{counts.teachers}}</h1>
+                        </div>
+                      </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-1 mt-3 mb-3" data-aos-duration='25000' data-aos="fade-left">
+                 <div class="container">
+                   <div class="row">
+                     <div class="col-12 shadow rounded app-count ">
+                      <div>
+                        <img src="{% static 'assets/img/sciences/undraw_best_place_r685.svg'%}" alt="" class="img-fluid mb-2 mt-2">
+                        <div>
+                          <p class="text-muted mb-3 mt-3 text-center">Xonalar Soni</p>
+                          <h1 class="count text-center">{{counts.rooms}}</h1>
+                        </div>
+                      </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"  style="height: 400px;">
+      <div class="container-fluid last-news ">
+        <h3 class="h3 text-muted font-weight-bold" style="text-align: center;">So'ngi Yangiliklar</h3>
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 mt-3 mb-3" data-aos-duration='25000' data-aos="fade-up">
+            <img src="{% static 'assets/img/ill/ill.png' %}" alt="" class="img-fluid">
+          </div>
+          <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 mt-3 mb-3 shadow rounded" data-aos-duration='25000' data-aos="fade-up">
+            <div class="owl-carousel owl-carousel-1 owl-theme" style="cursor: pointer;">
+              {% for new in news %}              
+                <div class="item">
+                <div class="card" style="height: 400px;">
+                  <div class="row">
+                    <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 ">
+                      <img src="media/{{new.imgs}}" alt="" class="img-fluid shadow rounded" style="height: 250px;">
+                    </div>
+                    <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12">
+                      <a href="post/{{new.id}}" class="h2 text-center text-success mt-5">{{new.title}}</a>
+                    </div>
+                    <div class="col-10 offset-1 mt-3">
+                      <p class="text-muted">{{new.description}}</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              {%endfor%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img-back" data-aos-duration='25000' data-aos="fade-down">
+      <div class="img-src">
+        <div class="container">
+          <div class="section section-lg section-nucleo-icons pb-250">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                  <h2 class="display-3">Dicta quis quia unde praesentium</h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum repudiandae corporis, cumque similique libero non. Molestiae, dignissimos fugiat eaque, maiores veritatis unde animi ut obcaecati vel veniam iure. Laudantium nulla, at omnis, cupiditate inventore corporis quidem in provident obcaecati voluptatem ipsa labore soluta mollitia harum? Dicta quis quia unde praesentium?
+                  </p>
+                  <div class="btn-wrapper">
+                    <a href="{%url 'news'%}" class="btn btn-primary">Yangiliklar</a>
+                    <a href="{% url 'contact' %}" rel="nofollow" class="btn btn-default mt-3 mt-md-0">Aloqa</a>
+                  </div>
+                </div>
+              </div>
+              <div class="blur--hover">
+                <a href="{% url 'about' %}" rel="nofollow">
+                  <div class="icons-container blur-item mt-5 on-screen" data-toggle="on-screen">
+                    <img src="{% static 'assets/img/undraw_team_spirit_re_yl1v.svg' %}" class="img-fluid" alt="">
+                  </div>
+                  <span class="blur-hidden h5 text-success">Biz haqimizda toliqroq malumot</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}

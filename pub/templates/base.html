@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% include 'includes/css.html'%}
+</head>
+<body style="overflow-x: hidden;">
+    {% include 'includes/header.html' %}
+    {% block content %}
+    {% endblock content%}
+    {% include 'includes/footer.html' %}
+</body>
+{% include 'includes/js.html' %}
+<script>
+  AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+</script>
+<script>
+      
+    function scrollToDownload() {
+  
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel-1');
+      owl.owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          960: {
+            items: 1
+          },
+          1200: {
+            items: 1
+          }
+        }
+      });
+      owl.on('mousewheel', '.owl-stage', function(e) {
+        if (e.deltaY > 0) {
+          owl.trigger('next.owl');
+        } else {
+          owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+      });
+    })
+  </script>
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          960: {
+            items: 3
+          },
+          1200: {
+            items: 4
+          }
+        }
+      });
+      owl.on('mousewheel', '.owl-stage', function(e) {
+        if (e.deltaY > 0) {
+          owl.trigger('next.owl');
+        } else {
+          owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+      });
+    })
+  </script>
+  <script>
+    $(document).ready(function() {
+  
+  var counters = $(".count");
+  var countersQuantity = counters.length;
+  var counter = [];
+  
+  for (i = 0; i < countersQuantity; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+  }
+  
+  var count = function(start, value, id) {
+    var localStart = start;
+    setInterval(function() {
+      if (localStart < value) {
+        localStart++;
+        counters[id].innerHTML = localStart;
+      }
+    }, 10);
+  }
+  
+  for (j = 0; j < countersQuantity; j++) {
+    count(0, counter[j], j);
+  }
+  });
+  </script>
+</html>
