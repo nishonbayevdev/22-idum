@@ -1,3 +1,4 @@
+{% load admin_urls %}
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-2" >
     <div class="container">
       <a class="navbar-brand mr-lg-5" href= { %url 'home' %}>
@@ -64,7 +65,7 @@
             </a>
           </li>
           <li class="nav-item d-none d-lg-block">
-            <a href='admin/' class="btn btn-primary btn-icon">
+            <a href="/admin" class="btn btn-primary btn-icon">
               <span class="btn-inner--icon">
                 <i class="fa fa-shopping-cart"></i>
               </span>
